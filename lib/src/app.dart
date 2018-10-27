@@ -8,25 +8,7 @@ class App extends StatelessWidget {
   build(context) {
     return MaterialApp(
       title: 'Log Me In',
-      onGenerateRoute: routes,
+      home: Home(),
     );
-  }
-
-  Route routes(RouteSettings settings) {
-    if (settings.name == '/') {
-      return MaterialPageRoute(
-        builder: (context) {
-          return CalenderScreen();
-        },
-      );
-    } else if (settings.name == '/Jonas') {
-      return MaterialPageRoute(builder: (context) {
-        return Home();
-      });
-    } else {
-      return MaterialPageRoute(builder: (context) {
-        return Home();
-      });
-    }
   }
 }

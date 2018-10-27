@@ -7,7 +7,13 @@ class CalenderScreen extends StatelessWidget {
       body: Center(
         child: RaisedButton(
           onPressed: () {
-            Navigator.pushNamed(context, '/Jonas');
+            Navigator.of(context).push(
+              new MaterialPageRoute(
+                builder: (context) {
+                  CalenderScreen();
+                },
+              ),
+            );
           },
           child: Text('Calender Screen'),
         ),

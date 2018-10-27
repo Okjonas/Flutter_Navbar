@@ -20,8 +20,8 @@ class _HomeState extends State<Home> {
     HomeScreen(),
     CalenderScreen(),
     AddScreen(),
-    MessengerScreen(),
     ContactCardScreen(),
+    MessengerScreen(),
   ];
 
   @override

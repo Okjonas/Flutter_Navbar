@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:navbar2/src/screens/messenger_screen.dart';
 
 class ContactCardScreen extends StatelessWidget {
   @override
@@ -7,8 +8,15 @@ class ContactCardScreen extends StatelessWidget {
       body: Center(
         child: RaisedButton(
           onPressed: () {
-            // Navigator.pushNamed(context, '/Jonas');
+            Navigator.push(
+              context,
+              new MaterialPageRoute(
+                builder: (context) => MessengerScreen(),
+              ),
+            );
           },
+          // Navigator.pushNamed(context, '/Jonas');
+
           child: Text('Contact Card Screeen'),
         ),
       ),
