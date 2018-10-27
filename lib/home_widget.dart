@@ -1,6 +1,11 @@
 import 'package:flutter/material.dart';
 import 'home_widget.dart';
 import 'placeholder_widget.dart';
+import 'src/screens/calender_screen.dart';
+import 'src/screens/contact_card_screen.dart';
+import 'src/screens/home_screen.dart';
+import 'src/screens/add_screen.dart';
+import 'src/screens/messenger_screen.dart';
 
 class Home extends StatefulWidget {
   @override
@@ -12,11 +17,11 @@ class Home extends StatefulWidget {
 class _HomeState extends State<Home> {
   int _currentIndex = 0;
   final List<Widget> _children = [
-    PlaceholderWidget(Colors.white),
-    PlaceholderWidget(Colors.deepOrange),
-    PlaceholderWidget(Colors.green),
-    PlaceholderWidget(Colors.blue),
-    PlaceholderWidget(Colors.red)
+    HomeScreen(),
+    CalenderScreen(),
+    AddScreen(),
+    MessengerScreen(),
+    ContactCardScreen(),
   ];
 
   @override
